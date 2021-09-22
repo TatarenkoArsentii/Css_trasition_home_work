@@ -23,7 +23,7 @@
   color: darkgray;
   text-align: center;
   padding: 10px;
-  transition: 2s;
+  transition: 1s;
 }
 
 .container .card:hover .part_1 {
@@ -46,9 +46,10 @@
 }
 
 .container .card .part_2 {
-  height: 0;
+  max-height: 0;
+  /* height: 0; */
   overflow: hidden;
-  transition: all 0.7s;
+  transition: all 1s ;
 }
 
 .container .card .part_2 p {
@@ -58,11 +59,13 @@
 }
 
 .container .card .part_2 a {
+  display: inline-block;
   color: #000;
   text-decoration: none;
   padding: 10px;
   border: 1px solid #000;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .container .card:hover .part_1 {
@@ -70,7 +73,8 @@
 }
 
 .container .card:hover .part_2 {
-  height: 150px;
+  max-height: 1100px;
+  /* height: 300px; */
   width: 100%;
   background: #fff;
 }
